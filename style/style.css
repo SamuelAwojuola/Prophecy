@@ -4,9 +4,9 @@ body {
 }
 
 div.timelineTableContainer {
-    overflow: scroll;
+    overflow:scroll;
     margin-top: 3px;
-    display: inline-block;
+    display: none; /*this is dependent on the script to make it visible*/
     width: 100%;
 }
 

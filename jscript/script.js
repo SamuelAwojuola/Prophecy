@@ -96,3 +96,14 @@ $(document).ready(function () {
     $('#titlebar').load("navigation.html");
 
 });
+
+    $(document).ready(function () {
+
+    $('.timelineTableContainer').delay( 100 ).toggle(100);
+
+});
+
+$('li').click(function() {
+  $(this).siblings().find('a').removeClass('focus');
+  $(this).find('a').addClass('focus');
+});

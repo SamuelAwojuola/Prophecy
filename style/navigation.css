@@ -75,6 +75,10 @@ nav li a:hover {
     background-color: whitesmoke;
 }
 
-nav li a:active {
-    color:cadetblue;
+nav li a:focus {
+    color:pink;
+}
+
+.focus {
+  color: red;
 }
