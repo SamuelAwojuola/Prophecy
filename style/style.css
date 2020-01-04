@@ -4,7 +4,7 @@ body {
 }
 
 div.timelineTableContainer {
-    overflow: auto;
+    overflow: scroll;
     margin-top: 3px;
     display: inline-block;
     width: 100%;
