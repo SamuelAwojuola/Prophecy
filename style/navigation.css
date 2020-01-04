@@ -4,7 +4,7 @@
 }
 
 nav {
-    border-top: 5px solid #01354e;
+/*    border-top: 5px solid #01354e;*/
     -moz-box-shadow: 0 2px 3px 0 rgb(0, 0, 0, .75);
     -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .75);
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .75);
@@ -12,7 +12,10 @@ nav {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    margin-top: -25px;
+    
+    margin-top: -33px;
+    margin-left:-7px;
+    margin-right:-7px;
 }
 
 nav button {
@@ -25,11 +28,13 @@ nav button {
 }
 
 h2 {
-    text-align: center;
+/*    text-align: center;*/
     /*            vertical-align: middle;*/
-    margin: 0;
+    margin-top: -8px;
+    vertical-align:text-top;
     padding-left: 25px;
-    /*            display:inline;*/
+/*    background-color: aqua;*/
+/*                display:inline-flex;*/
     /*            position:static;*/
     z-index: 10;
 }
@@ -37,7 +42,7 @@ h2 {
 nav ul {
     /*            padding-bottom: 10px;*/
     /*            text-align: center;*/
-    display: none;
+/*    display: none;*/
     margin: 0;
     border-top: 1px solid rgba(1, 53, 78, 0.32);
     padding: 0;
@@ -67,5 +72,9 @@ nav li:first-child a {
 */
 
 nav li a:hover {
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+}
+
+nav li a:active {
+    color:red;
 }
