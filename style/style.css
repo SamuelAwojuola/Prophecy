@@ -1,12 +1,15 @@
 body {
     font-size: 12.5px;
     font-family: "Trebuchet MS", Verdana, sans-serif;
+    background-color: beige;
+    /*  background-color: bisque; */
 }
 
 div.timelineTableContainer {
-    overflow:scroll;
+    overflow: scroll;
     margin-top: 3px;
-    display: none; /*this is dependent on the script to make it visible*/
+    display: none;
+    /*this is dependent on the script to make it visible*/
     width: 100%;
 }
 
@@ -15,14 +18,42 @@ div.timelineTableContainer {
     min-height: 50vh;
 }
 
-tr:first-child, th {
-    background-color: #ddc474;
-}
-    tr:nth-child(even) {
-    background-color:#fffb9f;
+th {
+    font-size: 15px;
 }
 
-tr{
+.format,
+a {
+    color: #480000;
+    /*    font-size: .9em;*/
+    font-size: 12px;
+}
+
+/*Button Styling*/
+#mybutton {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px dotted white;
+    color: black;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+    font-weight: bold;
+    font-style: oblique;
+/*    box-shadow:0px 1px 1px 1px #3b3b3b;*/
+}
+
+
+tr:first-child,
+th {
+    background-color: #ddc474;
+}
+
+tr:nth-child(even) {
+    background-color: #fffb9f;
+}
+
+tr {
     background-color: beige
 }
 
@@ -45,7 +76,7 @@ td {
     padding: 8px;
     border-bottom: 1px solid #ddd;
     min-width: 50px;
-/*    min-height: 25px;*/
+    /*    min-height: 25px;*/
     border-left: 2.5px solid #b1b1b1;
     text-align: center;
 }
@@ -69,14 +100,14 @@ tr th:first-child:hover {
 
 tr th:first-child {
     font-size: 10px;
-/*    background-color: lemonchiffon;*/
+    /*    background-color: lemonchiffon;*/
     text-align: center;
     width: 5px;
 }
 
 tr {
-/*    height: 50px;*/
-    font-size: 12.5px;
+    /*    height: 50px;*/
+    font-size: 15px;
 }
 
 tr:hover {
@@ -93,37 +124,107 @@ td:empty {
     background-color: black;
 }
 
-th {
-    font-size: 15px;
-}
 
 .highlight {
     background-color: yellow;
 }
 
-.bold{
+.bold {
     font-style: italic;
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 15px;
 }
 
-/*Button Styling*/
-.format,
-a {
-    color: #480000;
-    font-size: .8em;
+
+/*for ANDROID phones*/
+@media only screen and (max-device-width : 768px) {
+
+    table{
+    }
+    
+    .timelineTable,
+    table,
+    tr,
+    td {
+        font-size: 25.5px;
+    }
+
+    body {
+        font-size: 30px;
+        text-align: center;
+        background-color: beige;
+    }
+
+    th {
+        font-size: 30px;
+    }
+
+    #mybutton {
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px dotted white;
+        color: black;
+        font-size: 30px;
+        margin: 0;
+        padding-bottom: 10px;
+        z-index: 50;
+        font-weight: bold;
+        font-style: oblique;
+        float:right;
+    }
+
+    a {
+        color: #480000;
+        /*    font-size: .9em;*/
+        font-size: 27px;
+    }
+
+    tr th:first-child {
+        font-size: 25px;
+    }
+
 }
 
-#mybutton {
-    background-color: rgba(255, 255, 255, 0);
-    border:0px dotted white;
-    color: black;
-    font-size: 10px;
-    margin:0;
-    padding: 0;
-    z-index: 50;
-    font-weight:bold;
-    font-style: oblique;
-/*    font-style: italic;*/
-/*    box-shadow:0px 1px 1px 1px #3b3b3b;*/
+/*for IPAD*/
+@media only screen and (max-device-width : 1024px) {
+
+    .timelineTable,
+    table,
+    tr,
+    td {
+        font-size: 30px;
+    }
+
+    body {
+        font-size: 35px;
+        text-align: center;
+        background-color: beige;
+    }
+
+    th {
+        font-size: 35px;
+    }
+
+
+    #mybutton {
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px dotted white;
+        color: black;
+        font-size: 30px;
+        margin: 0;
+        padding-bottom: 10px;
+        z-index: 50;
+        font-weight: bold;
+        font-style: oblique;
+    }
+
+    a {
+        color: #480000;
+        /*    font-size: .9em;*/
+        font-size: 27px;
+    }
+
+    tr th:first-child {
+        font-size: 25px;
+    }
+
 }
